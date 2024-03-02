@@ -1,0 +1,12 @@
+{% extends 'base.html'%} 
+{% block content%}
+
+<div style="width : 50%; margin: auto; ">
+    <h1 class="text-primary">Are you want to sure your task is completed??</h1>
+    <form method="post">
+    {% csrf_token%}
+    {{form}}
+    <button type="submit" class="btn btn-info"> YES </button>
+    </form>
+</div>
+{% endblock %}
